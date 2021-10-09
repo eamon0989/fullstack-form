@@ -1,0 +1,14 @@
+<h1>Test fullstack form</h1>
+<p>Welcome to my form</p>
+<form action="/" method="POST">
+  <fieldset>
+    <input type="text" name="text" id="text">
+    <button type="submit">Submit</button>
+  </fieldset>
+</form>
+
+<ul>
+  {{#each entry}}
+    <li>{{this.text}}</li>
+  {{/each}}
+</ul>
